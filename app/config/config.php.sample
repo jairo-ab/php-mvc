@@ -1,0 +1,13 @@
+<?php
+
+return array(
+    'site'=>'[[SITE]]',
+    'host'=>'[[HOST]]',
+    'usuario'=>'[[USUARIO]]',
+    'nome'=>'[[NOME]]',
+    'senha'=>'[[SENHA]]',
+    'email'=>'[[EMAIL]]',
+    'email_host'=>'[[EMAIL_HOST]]',
+    'email_porta'=>'[[EMAIL_PORTA]]',
+    'email_senha'=>'[[EMAIL_SENHA]]'
+);

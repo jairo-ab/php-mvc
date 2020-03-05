@@ -1,0 +1,53 @@
+/*
+ * 
+ * admin.css
+ * 
+ * Autor: Lucas Saliés Brum a.k.a. sistematico <lucas@archlinux.com.br>
+ * 
+ * Criado em: 04-12-2019 5:11:25 pm
+ * Modificado em: 15-12-2019 4:35:05 pm
+ * 
+ * Este trabalho está licenciado com uma Licença Creative Commons
+ * Atribuição 4.0 Internacional
+ * http://creativecommons.org/licenses/by/4.0/
+ * 
+ */
+
+@font-face {
+    font-family: 'NunitoBold';
+    src: url('fontes/nunito/nunito-bold.woff2') format('woff2'),
+         url('fontes/nunito/nunito-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('fontes/nunito/nunito.woff2') format('woff2'),
+         url('fontes/nunito/nunito.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: Nunito;
+}
+
+a h3.stats-title {
+    color: #fff;
+    text-decoration: none;
+    font-size:26px;
+    font-weight:600;
+    letter-spacing:.04em;
+}
+
+.stats-title:hover {
+    text-decoration: none;
+}
+
+.truncate {
+    width: 110px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

@@ -1,0 +1,42 @@
+{
+    "name": "sistematico/php-mvc",
+    "description": "Simple PHP MVC CRUD",
+    "type": "project",
+    "license": "Apache",
+    "authors": [
+        {
+            "name": "Lucas Saliés Brum",
+            "email": "lucas@archlinux.com.br"
+        }
+    ],
+    "config": {
+        "platform": {
+            "php": "7"
+        }
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "require": {
+        "twbs/bootstrap": "^4",
+        "components/font-awesome": "^5",
+        "components/jquery": "^3",
+        "phpmailer/phpmailer": "*"
+    },
+    "autoload":
+    {
+        "psr-4":
+        {
+            "Crud\\" : "app/"
+        }
+    },
+    "scripts": {
+        "post-update-cmd": [
+            "php -r \"rename('vendor/twbs/bootstrap/dist/css/', 'public/css/');\"",
+            "php -r \"rename('vendor/twbs/bootstrap/dist/js/', 'public/js/');\""
+        ],
+        "post-install-cmd": [
+            "php -r \"rename('vendor/twbs/bootstrap/dist/css/', 'public/css/');\"",
+            "php -r \"rename('vendor/twbs/bootstrap/dist/js/', 'public/js/');\""
+        ]
+    }
+}

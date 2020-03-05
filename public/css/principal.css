@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'NunitoBold';
+    src: url('fontes/nunito/nunito-bold.woff2') format('woff2'),
+         url('fontes/nunito/nunito-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('fontes/nunito/nunito.woff2') format('woff2'),
+         url('fontes/nunito/nunito.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    color: #fff;
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+    background: #434c5e;
+}
+
+a, a:link, a:active, a:visited {
+    transition: color 0.25s ease-out; 
+    -webkit-transition: color 0.25s ease-out; 
+    -moz-transition: color 0.25s ease-out; 
+    -o-transition: color 0.25s ease-out;
+    color: #fff; 
+}
+
+a:hover {
+    color: #000;
+}
+
+.truncate {
+    width: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.drop-cadastro {
+    min-width: 250px;
+}
+
+.footer { color: #212529; }
+.footer a { color: #000; }
+
+/* Sticky Footer */
+main > .container, main > .container-fluid {
+    padding: 60px 15px 0;
+}
+
+.footer {
+    background-color: #f5f5f5;
+}
+
+.footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+code {
+    font-size: 80%;
+}

@@ -1,0 +1,8 @@
+vendor/
+db/
+webfonts/
+app/config/config.php
+bootstrap.bundle.min.js
+bootstrap.min.css
+composer.lock
+*.map
