@@ -20,7 +20,7 @@ Projeto simples de CRUD(Create, Read, Update, Delete) em [PHP](https://php.net) 
 
 ## Nginx
 
-Sugestão de config do Nginx:
+Sugestão de configuração do Nginx:
 
 ```
 server {
@@ -51,12 +51,14 @@ Em breve.
 
 ## Demo
 
-- [http://mvc.lucasbrum.net](http://mvc.lucasbrum.net)
+- [https://mvc.lucasbrum.net](https://mvc.lucasbrum.net)
 
 ## Créditos
 
+- [Arch Linux](https://archlinux.org)
 - [Mini3](https://github.com/panique/mini3)
 - [Twitter Boostrap 4](https://getbootstrap.com)
+- [jQuery](https://jquery.com)
 - [Spur](https://hackerthemes.com/bootstrap-templates/spur/)
 - [Composer](https://getcomposer.org)
 - [PHPMailer](https://packagist.org/packages/phpmailer/phpmailer)

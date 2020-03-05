@@ -6,7 +6,7 @@
     
     <title><?php if (isset($this->cfg['site'])) { echo $this->cfg['site'] . ' - Admin'; } else { echo 'PHP MVC - Admin'; } ?></title>
     
-    <link rel="stylesheet" href="<?php echo URL; ?>css/fontawesome-5.11.2.min.css?v=<?php echo uniqid(); ?>">
+    <link rel="stylesheet" href="<?php echo URL; ?>css/fontawesome.min.css?v=<?php echo uniqid(); ?>">
     <link rel="stylesheet" href="<?php echo URL; ?>css/spur.min.css?v=<?php echo uniqid(); ?>">
     <link rel="stylesheet" href="<?php echo URL; ?>css/painel.css?v=<?php echo uniqid(); ?>">
 

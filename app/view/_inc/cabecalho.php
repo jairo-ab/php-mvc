@@ -11,7 +11,7 @@
     <meta property="og:url" content="https://site.com" />
     <meta property="og:image" content="https://site.com/img/logotipo.jpg" />
     <link rel="stylesheet" href="<?php echo URL; ?>css/bootstrap.min.css">
-    <link rel="stylesheet" href="<?php echo URL; ?>css/fontawesome-5.11.2.min.css">
+    <link rel="stylesheet" href="<?php echo URL; ?>css/fontawesome.min.css">
     <link rel="stylesheet" href="<?php echo URL; ?>css/principal.css">
     <link rel="shortcut icon" href="<?php echo URL; ?>img/favicon.ico">
 </head>
