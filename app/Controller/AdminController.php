@@ -2,7 +2,7 @@
 
 namespace Crud\Controller;
 use Crud\Model\Admin;
-use Crud\Model\Email;
+use Crud\Model\Usuarios;
 
 class AdminController
 {
@@ -11,21 +11,28 @@ class AdminController
 
     public function __construct()
     {
-        if (file_exists(CONFIG_FILE)) {
-            $this->cfg = include(CONFIG_FILE);
-        } 
-    }
-
-    public function index() {
-        if (Admin::check() === false) {
-            header('location: ' . URL . 'admin/instalar');
-        } elseif (isset($_SESSION["logado"]) && isset($_SESSION['role']) && $_SESSION['role'] === 'admin') {
-            require APP . 'view/_admin/cabecalho.php';
-            require APP . 'view/admin/index.php';
-            require APP . 'view/_admin/rodape.php';
+        if (Admin::check() !== false && isset($_SESSION["logado"]) && isset($_SESSION['role']) && $_SESSION['role'] === 'admin') {
+            if (file_exists(CONFIG_FILE)) {
+                $this->cfg = include(CONFIG_FILE);
+            } 
         } else {
             header('location: ' . URL);
         }
+    }
+
+    public function index() {
+        require APP . 'view/_admin/cabecalho.php';
+        require APP . 'view/admin/index.php';
+        require APP . 'view/_admin/rodape.php';
+    }
+
+    public function usuarios()
+    {
+        $usuarios = new Usuarios();
+        $retorno = $usuarios->listar();
+        require APP . 'view/_admin/cabecalho.php';
+        require APP . 'view/admin/usuarios.php';
+        require APP . 'view/_admin/rodape.php';
     }
 
     public function config() {
@@ -71,7 +78,7 @@ class AdminController
     }
 
     public function instalar() {
-        if (Admin::check() === false || file_exists(CONFIG_FILE . ".sample") && !file_exists(CONFIG_FILE)) {
+        if (file_exists(CONFIG_FILE . ".sample") && !file_exists(CONFIG_FILE)) {
             $porta = (isset($_POST['email_porta']) ? $_POST['email_porta'] : 587);
 
             if (isset($_POST["instalar"])
