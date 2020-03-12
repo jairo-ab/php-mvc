@@ -278,9 +278,7 @@ class Usuarios extends Model
 
     public function sair() 
     {
-        unset($_SESSION['logado']);
-        unset($_SESSION['id']);
-        unset($_SESSION['role']);
+        unset($_SESSION['logado'],$_SESSION['id'],$_SESSION['role']);
         return json_encode(array("tipo"=>"alert-info","msg"=>"Deslogado com sucesso."));
     }
 
