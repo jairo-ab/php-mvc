@@ -10,7 +10,7 @@ $(document).ready(function() {
 
     $("#usuario").keyup(function(e) {
         let dominio = $("#endsite").val().replace(/(^\w+:|^)\/\//, '');
-        let usuario = $("#usuario").val();
+        let usuario = $("#usuario").val().split(' ')[0];
         $("#email").val(usuario + '@' + dominio);
     });
 
