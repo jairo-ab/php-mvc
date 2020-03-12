@@ -27,9 +27,9 @@
             <nav class="dash-nav-list">
                 <a href="<?php echo URL; ?>admin" class="dash-nav-item"><i class="fas fa-home"></i> Painel </a>
                 <a href="<?php echo URL; ?>admin/config" class="dash-nav-item"><i class="fas fa-tools"></i> Config </a>
-                <a href="<?php echo URL; ?>usuarios" class="dash-nav-item"><i class="fas fa-user"></i>Usuários</a>
-                <a href="<?php echo URL; ?>posts" class="dash-nav-item"><i class="fas fa-newspaper"></i>Posts</a>
-                <a href="<?php echo URL; ?>paginas/sobre" class="dash-nav-item"><i class="fas fa-info-circle"></i>Sobre</a>
+                <a href="<?php echo URL; ?>admin/usuarios" class="dash-nav-item"><i class="fas fa-user"></i>Usuários</a>
+                <a href="<?php echo URL; ?>admin/posts" class="dash-nav-item"><i class="fas fa-newspaper"></i>Posts</a>
+                <a href="<?php echo URL; ?>admin/sobre" class="dash-nav-item"><i class="fas fa-info-circle"></i>Sobre</a>
             </nav>
         </div>
         <div class="dash-app">
